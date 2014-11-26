@@ -1,0 +1,5 @@
+#dancasttro account
+Host github.com-dancasttro
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_github
