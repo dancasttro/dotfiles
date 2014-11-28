@@ -18,6 +18,15 @@ else
     echo "OK"
 fi
 
+# gulp
+if which gulp &> /dev/null; then
+    msg_checking "gulp"
+else
+    msg_install "gulp" "npm install -g gulp"
+    npm install -g gulp
+    echo "OK"
+fi
+
 # vtop
 if which vtop &> /dev/null; then
     msg_checking "vtop"
