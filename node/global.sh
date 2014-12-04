@@ -13,8 +13,8 @@ fi
 if which grunt &> /dev/null; then
     msg_checking "grunt"
 else
-    msg_install "grunt" "npm install -g grunt-cli"
-    npm install -g grunt-cli
+    msg_install "grunt" "sudo npm install -g grunt-cli"
+    sudo npm install -g grunt-cli
     echo "OK"
 fi
 
@@ -22,8 +22,8 @@ fi
 if which gulp &> /dev/null; then
     msg_checking "gulp"
 else
-    msg_install "gulp" "npm install -g gulp"
-    npm install -g gulp
+    msg_install "gulp" "sudo npm install -g gulp"
+    sudo npm install -g gulp
     echo "OK"
 fi
 
@@ -31,8 +31,8 @@ fi
 if which vtop &> /dev/null; then
     msg_checking "vtop"
 else
-    msg_install "vtop" "npm install vtop -g"
-    npm install vtop -g
+    msg_install "vtop" "sudo npm install vtop -g"
+    sudo npm install vtop -g
     echo "OK"
 fi
 
@@ -40,8 +40,8 @@ fi
 if which jshint &> /dev/null; then
     msg_checking "jshint"
 else
-    msg_install "jshint" "npm install jshint -g"
-    npm install jshint -g
+    msg_install "jshint" "sudo npm install jshint -g"
+    sudo npm install jshint -g
     echo "OK"
 fi
 
@@ -49,8 +49,8 @@ fi
 if which csslint &> /dev/null; then
     msg_checking "csslint"
 else
-    msg_install "csslint" "npm install -g csslint"
-    npm install -g csslint
+    msg_install "csslint" "sudo npm install -g csslint"
+    sudo npm install -g csslint
     msg_ok "OK"
 fi
 
@@ -58,8 +58,8 @@ fi
 if which tmi &> /dev/null; then
     msg_checking "tmi"
 else
-    msg_install "tmi" "npm install -g tmi"
-    npm install -g tmi
+    msg_install "tmi" "sudo npm install -g tmi"
+    sudo npm install -g tmi
     msg_ok "OK"
 fi
 
@@ -67,8 +67,8 @@ fi
 if which bower &> /dev/null; then
     msg_checking "bower"
 else
-    msg_install "bower" "npm install -g bower"
-    npm install -g bower
+    msg_install "bower" "sudo npm install -g bower"
+    sudo npm install -g bower
     msg_ok "OK"
 fi
 
@@ -76,7 +76,7 @@ fi
 if which bower-installer &> /dev/null; then
     msg_checking "bower-installer"
 else
-    msg_install "bower-installer" "npm install -g bower-installer"
-    npm install -g bower-installer
+    msg_install "bower-installer" "sudo npm install -g bower-installer"
+    sudo npm install -g bower-installer
     msg_ok "OK"
 fi
