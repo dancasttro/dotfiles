@@ -74,6 +74,9 @@ alias labs='cd ~/Dropbox/labs'
 # Search
 alias howto="open http://stackoverflow.com/search?q= "
 
+# mongo
+alias mongorun='mongod --config /Users/danielcastro/mongodb/mongod.conf &'
+
 # Apache
 # Moved some alias to apache() function
 alias httpd="sudo nano -w /etc/apache2/httpd.conf"
