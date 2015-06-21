@@ -8,6 +8,14 @@ alias .....="cd ../../../.."
 
 alias c="clear"
 
+# List alias git
+st = git status
+df = git diff
+co = git checkout
+psm = git push origin master
+pom = git pull origin master
+ci = git commit -m
+
 # List all files colorized in long format
 alias l="ls -l ${colorflag}"
 
