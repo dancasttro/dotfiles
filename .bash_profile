@@ -69,6 +69,7 @@ alias dbp="cd ~/Dropbox/projects"
 alias dl="cd ~/Downloads"
 alias t="cd ~/temp"
 alias s="cd ~/Sites"
+alias ws="cd ~/Workspace"
 alias h="history"
 alias o="open ."
 alias nh="node --harmony"
@@ -80,6 +81,9 @@ alias labs='cd ~/Dropbox/labs'
 
 # Search
 alias howto="open http://stackoverflow.com/search?q= "
+
+# mongo
+alias mongorun='mongod --config /Users/danielcastro/mongodb/mongod.conf &'
 
 # Apache
 # Moved some alias to apache() function
