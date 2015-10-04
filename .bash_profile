@@ -90,4 +90,4 @@ alias mongorun='mongod --config /Users/danielcastro/mongodb/mongod.conf &'
 alias httpd="sudo nano -w /etc/apache2/httpd.conf"
 alias vhost="sudo nano -w /etc/apache2/extra/httpd-vhosts.conf"
 
-export PS1="\[\033[38m\]\u\[\033[32m\] \w \[\033[31m\]\`ruby -e \"print (%x{git branch 2> /dev/null}.split(%r{\n}).grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`\[\033[37m\]$\[\033[00m\] "
+# export PS1="\[\033[38m\]\u\[\033[32m\] \w \[\033[31m\]\`ruby -e \"print (%x{git branch 2> /dev/null}.split(%r{\n}).grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`\[\033[37m\]$\[\033[00m\] "
