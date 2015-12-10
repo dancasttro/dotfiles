@@ -12,7 +12,7 @@ msg '                                                                           
 
 OSX=$(test "`uname`" == "Darwin" && echo "x")
 
-if [[ -d "$HOME/Dropbox/labs/dotfiles" ]]; then
+if [[ -d "$HOME/Dropbox/dotfiles" ]]; then
     msg_checking "Checking dotfiles directory"
 else
     msg_install "Cloning" "git@github.com:dancasttro/dotfiles.git"
@@ -32,4 +32,4 @@ sh common/dotfiles.sh
 
 sh zsh/global.sh
 
-# sh vim/global.sh
+sh vim/global.sh

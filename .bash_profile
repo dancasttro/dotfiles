@@ -75,7 +75,6 @@ alias o="open ."
 alias nh="node --harmony"
 
 # dropbox
-alias dotfiles='cd ~/Dropbox/dotfiles'
 alias jobs='cd ~/Dropbox/jobs'
 alias labs='cd ~/Dropbox/labs'
 
