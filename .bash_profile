@@ -38,7 +38,6 @@ alias nh="node --harmony"
 
 # dropbox
 alias jobs='cd ~/Dropbox/jobs'
-alias labs='cd ~/Dropbox/labs'
 
 # Search
 alias howto="open http://stackoverflow.com/search?q= "
