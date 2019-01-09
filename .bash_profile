@@ -19,6 +19,7 @@ alias lsd='ls -l | grep "^d"'
 
 # NPM
 alias nu="npm update"
+alias npv="npm outdated"
 
 # ------------------------------------------------------------------------------
 # | Development (based on my workflow)                                         |
@@ -47,3 +48,5 @@ alias howto="open http://stackoverflow.com/search?q= "
 alias httpd="sudo nano -w /etc/apache2/httpd.conf"
 alias vhost="sudo nano -w /etc/apache2/extra/httpd-vhosts.conf"
 
+#Server Python
+alias pyserver="python -m SimpleHTTPServer 9001"
