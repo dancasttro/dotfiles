@@ -173,6 +173,7 @@ Make it even easier version control ~/.gitconfig
 
 ## Terminal
 
+Add `~/.zshrc with` this content
 
 
 ```
@@ -222,4 +223,18 @@ alias pyserver="python -m SimpleHTTPServer 9001"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+```
+
+Install Plugins
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
+```
+
+Após essa instalação, vamos abrir o arquivo ~/.zshrc novamente e abaixo da linha `### End of Zplugin's installer chunk` que foi adicionada automaticamente no arquivo, adicionamos:
+
+```
+zplugin light zdharma/fast-syntax-highlighting
+zplugin light zsh-users/zsh-autosuggestions
+zplugin light zsh-users/zsh-completions
 ```
