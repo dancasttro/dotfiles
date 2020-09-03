@@ -45,4 +45,4 @@ alias vhost="sudo nano -w /etc/apache2/extra/httpd-vhosts.conf"
 alias pyserver="python -m SimpleHTTPServer 9001"
 
 # Reload Bashrc
-alias relaod="source ~/zshrc"
+alias relaod="source ~/.zshrc"
