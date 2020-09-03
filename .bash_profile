@@ -26,19 +26,12 @@ alias npv="npm outdated"
 # ------------------------------------------------------------------------------
 
 # Daily stuff
-alias subl='open -a "/Applications/Sublime Text.app"'
-alias db="cd ~/Dropbox"
-alias dbp="cd ~/Dropbox/projects"
 alias dl="cd ~/Downloads"
 alias t="cd ~/temp"
-alias s="cd ~/Sites"
 alias ws="cd ~/Workspace"
 alias h="history"
 alias o="open ."
 alias nh="node --harmony"
-
-# dropbox
-alias jobs='cd ~/Dropbox/jobs'
 
 # Search
 alias howto="open http://stackoverflow.com/search?q= "
@@ -50,3 +43,6 @@ alias vhost="sudo nano -w /etc/apache2/extra/httpd-vhosts.conf"
 
 #Server Python
 alias pyserver="python -m SimpleHTTPServer 9001"
+
+# Reload Bashrc
+alias relaod="source ~/zshrc"
