@@ -31,23 +31,20 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
   - Yarn
 
 ```
-brew install git heroku nvm rvm wget yarn
+brew install git nvm wget yarn
 ```
 
 ### Applications
 
  - App Cleaner
  - Google Chrome
- - Flume
- - Franz
  - Slack
- - Sourcetree
  - Spotify
  - VS Code
  - VLC
 
 ```
-brew cask install appcleaner google-chrome slack sourcetree spotify visual-studio-code vlc
+brew cask install appcleaner google-chrome slack spotify visual-studio-code vlc
 ```
 
 ## VS Code
@@ -127,47 +124,59 @@ Make it even easier version control ~/.gitconfig
 [user]
     name = Daniel Castro
     email = dancasttro@gmail.com
-    signingkey = "Your Sign In Key"
-
-[branch]
-    autosetupmerge = always
-
+[github]
+    user = dancasttro
+[color]
+    diff = auto
+    grep = auto
+    interactive = auto
+    status = auto
+    branch = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
 [alias]
-    ci = commit -am
-    lo = log --pretty=format:'%an - %h %s %ar'
-    st = status
+    clean-tags=for-each-ref --format="%(refname:short)" refs/tags/* | xargs git tag -d && git fetch --tags
+    st = status -sb
+    ci = commit -m
     br = branch
-    sw = show
     df = diff
-    fe = fetch
-    mg = merge
-    rb = rebase
-    rt = remote -v
+    lg = log -pgit ps
     co = checkout
-    po = push origin
-    pu = pull origin
-    pom = push origin master
-    pum = pull origin master
-    com = checkout master
-    pod = push origin develop
-    pud = pull origin develop
-    cod = checkout develop
-    pog = push origin gh-pages
-    pug = pull origin gh-pages
-    cog = checkout gh-pages
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-
+    fu = fetch upstream
+    tree = log --graph --pretty=oneline --decorate
+    pom = pull origin master
+    ps = push
+    pst = push --tags
+    pl = pull
+    pp = !"echo 'Pull'; git pull; echo 'Push'; git push"
+    amend = commit --amend -C HEAD
+    ll   = log --pretty=oneline --decorate --abbrev-commit --max-count=15
+    lll  = git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    rn = log -M
+    short = shortlog -s -n
+    # Displays active users in the repository in the past 6 months
+    active = shortlog --numbered --summary --email --no-merges --since="6 months"
 [core]
-    excludesfile = /Users/dancasttro/.gitignore_global
-
-[commit]
-    template = ~/.stCommitMsg
-
-[filter "lfs"]
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
+	excludesfile = /Users/danielcastro/.gitignore_global
+[push]
+    default = simple
+[filter "media"]
     required = true
-    process = git-lfs filter-process
+    clean = git media clean %f
+    smudge = git media smudge %f
+
 
 ```
 
@@ -202,12 +211,8 @@ alias npv="npm outdated"
 # ------------------------------------------------------------------------------
 
 # Daily stuff
-alias subl='open -a "/Applications/Sublime Text.app"'
-alias db="cd ~/Dropbox"
-alias dbp="cd ~/Dropbox/projects"
 alias dl="cd ~/Downloads"
 alias t="cd ~/temp"
-alias s="cd ~/Sites"
 alias ws="cd ~/Workspace"
 alias h="history"
 alias o="open ."
@@ -220,6 +225,9 @@ alias vhost="sudo nano -w /etc/apache2/extra/httpd-vhosts.conf"
 
 #Server Python
 alias pyserver="python -m SimpleHTTPServer 9001"
+
+# Reload Bashrc
+alias relaod="source ~/.zshrc"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
